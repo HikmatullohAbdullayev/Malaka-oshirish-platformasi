@@ -23,7 +23,7 @@ function SciencesSection() {
         </Link>
       </div>
 
-    <div className="flex justify-between items-center gap-[20px]  tablemin:grid tablemin:grid-cols-2 ">
+    <div className="flex justify-between items-center gap-[20px] py-[50px]  tablemin:grid tablemin:grid-cols-2 ">
 
     {
         brend_data.map((item) => (
