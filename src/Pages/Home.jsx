@@ -1,14 +1,18 @@
 
 import React from "react";
+import IntroSection from "../components/IntroSection";
+import InfoSection from "../components/InfoSection";
+import SciencesSection from "../components/SciencesSection";
 
 function Home() {
     return (
-        <section className="intro">
-            <div className="container  max-w-[1440px] mx-auto px-[20px]">
-
-            Home
+          <>
+            <div className=" intro  ">
+                <IntroSection/>
             </div>
-        </section>
+            <InfoSection/>
+            <SciencesSection/>
+          </>
     );
 }
 
