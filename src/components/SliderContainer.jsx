@@ -63,7 +63,7 @@ function SliderContainer(props) {
             
     {
         fanlar_data.map((item) => (
-            <div key={item.id} className=" bg-[#f2f2f2] mx-auto  text-start p-[27px] max-w-[410px] rounded-xl max-h-[450px] h-full    m-1 ">
+            <div key={item.id} className=" bg-[#f2f2f2] mx-auto  text-start p-[27px] max-w-[410px] rounded-xl max-h-[450px] h-full transition duration-300 ease-in-out transform    m-1  hover:shadow-lg">
             
               <div className=" ">
                 <img className="w-full h-[200px] mx-auto rounded-xl" src={item.img} alt={item.title} />
