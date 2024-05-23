@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
 
-import fanlar_data from "../data/fanlar_data";
+import slider_data from "../data/slider_data";
 import RigthIcon from "../assets/icon/RigthIcon";
 import LeftIcon from "../assets/icon/LeftIcon";
 import RigthVectorIcon from "../assets/icon/RigthVectorIcon";
@@ -12,7 +12,7 @@ import { useRef } from "react";
 import { Link } from 'react-router-dom';
 
 
-function SliderContainer(props) {
+function SliderContainer() {
     
     let sliderRef = useRef(null);
     const next = () => {
@@ -62,7 +62,7 @@ function SliderContainer(props) {
         }} {...settings}>
             
     {
-        fanlar_data.map((item) => (
+        slider_data.map((item) => (
             <div key={item.id} className=" bg-[#f2f2f2] mx-auto  text-start p-[27px] max-w-[410px] rounded-xl max-h-[450px] h-full transition duration-300 ease-in-out transform    m-1  hover:shadow-lg">
             
               <div className=" ">

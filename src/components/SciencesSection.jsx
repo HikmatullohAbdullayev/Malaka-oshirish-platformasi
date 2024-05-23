@@ -1,5 +1,4 @@
 import React from "react";
-// import brend1 from "../assets/img/metroLogo.png"
 
 
 import { Link } from "react-router-dom";
@@ -23,7 +22,7 @@ function SciencesSection() {
         </Link>
       </div>
 
-    <div className="flex justify-between items-center gap-[20px] py-[50px]  tablemin:grid tablemin:grid-cols-2 ">
+    <div className="flex justify-between items-center gap-[20px] py-[50px]  table845:grid table845:grid-cols-2 ">
 
     {
         brend_data.map((item) => (

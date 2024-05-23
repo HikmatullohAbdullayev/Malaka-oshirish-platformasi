@@ -1,12 +1,11 @@
 import React from "react";
 
-
-function Tasks() {
+function LessonTable() {
     return (
         <div>
-            Tasks
+            LessonTable
         </div>
     );
 }
 
-export default Tasks;
+export default LessonTable;

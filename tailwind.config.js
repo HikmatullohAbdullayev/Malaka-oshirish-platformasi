@@ -19,7 +19,7 @@ export default {
       'mobile550': {'max':'550px'},
       // => @media (max-width: 550px) { ... }
       
-      'mobil2': {'max':'640px'},
+      'mobil640': {'max':'640px'},
       // => @media (max-width: 640px) { ... }
      
       'mobil670': {'max':'670px'},
@@ -31,7 +31,7 @@ export default {
       'mobile768': {'max': '768px'},
       // => @media (max-width: 768px) { ... }
       
-      'tablemin': {'max': '845px'},
+      'table845': {'max': '845px'},
       // => @media (max-width: 845px) { ... }
 
       'table900': {'max':'900px'} ,
