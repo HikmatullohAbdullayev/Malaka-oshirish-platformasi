@@ -1,8 +1,6 @@
 import React from 'react'
 import Sidebar from './sidebar'
-import { Route, Routes } from "react-router-dom";
-import Dars from './Dars';
-import Kutubxona from './Kutubxona';
+import { Outlet } from "react-router-dom";
 
 const Admin = () => {
   return (
@@ -12,11 +10,7 @@ const Admin = () => {
         <Sidebar/>
       </div>
       <div >
-        <Routes>
-          <Route path='/lesson' element={<Dars/>}/>
-          <Route path='/Kutubxon' element={<Kutubxona/>}/>
-          
-        </Routes>
+       <Outlet/>
       </div>
     </div>
   )
