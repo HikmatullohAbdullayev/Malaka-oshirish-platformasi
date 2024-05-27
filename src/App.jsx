@@ -15,8 +15,13 @@ import Books from "./pages/student/books/Books";
 import DownloadLogin from "./pages/student/downloadLogin/DownloadLogin";
 import Serfetikat from "./pages/student/serfetikat/Serfetikat";
 import NotFound from "./pages/notFound/NotFound";
+
+
 import './App.css'
 import './hikmatulloh.css'
+import Admin from "./pages/admin/Admin";
+
+
 
 function App() {
   return (
@@ -43,7 +48,8 @@ function App() {
       {/* ===Login va Sefetikat=== */}
 
       {/* ===Teacher=== */}
-
+      {/*-----Admin----- */}
+      <Route path="Admin" element={<Admin/>}/>
       
       <Route path="*" element={<NotFound/>}/>
   </Routes>
