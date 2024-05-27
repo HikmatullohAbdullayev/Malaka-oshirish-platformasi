@@ -56,6 +56,9 @@ module.exports = {
         'mobile450': {'max':'450px'},
         // => @media (max-width: 450px) { ... }
         
+        'mobile480': {'max':'480px'},
+        // => @media (max-width: 480px) { ... }
+        
         'mobile530': {'max':'530px'},
         // => @media (max-width: 530px) { ... }
         
@@ -70,6 +73,9 @@ module.exports = {
        
         'mobil675': {'max':'675px'},
         // => @media (max-width: 670px) { ... }
+
+        'mobil680': {'max':'680px'},
+        // => @media (max-width: 680px) { ... }
   
         'mobile768': {'max': '768px'},
         // => @media (max-width: 768px) { ... }
