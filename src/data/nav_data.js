@@ -6,7 +6,7 @@ const nav_data = [
     },
     {
         id: 2,
-        link: "vazifalar",
+        link: "fanlar/vazifalar",
         title: "Vazifalar"
     },
     {

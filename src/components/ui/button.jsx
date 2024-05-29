@@ -12,10 +12,12 @@ const buttonVariants = cva(
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+        form:
+          "w-full py-[0px]  bg-blue-800 text-white   border-transparrent  hover:bg-blue-400 hover:border-blue-400  hover:outline-blue-600   active:border-blue-600    active:bg-blue-500 active:outline-blue-600  focus:border-blue-600  focus:outline-blue-600 focus:bg-blue-500",
         outline:
           "border border-input bg-red-600 hover:bg-blue-400 hover:text-accent-foreground",
         nimadur:
-          "border border-input bg-yellow-600 hover:bg-blue-400 hover:text-accent-foreground",
+          "  hover:bg-blue-400 hover:text-accent-foreground",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
@@ -25,7 +27,7 @@ const buttonVariants = cva(
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-lg py-4 px-8",
-        icon: "h-10 w-10",
+        icon: "h- w-10",
       },
     },
     defaultVariants: {
