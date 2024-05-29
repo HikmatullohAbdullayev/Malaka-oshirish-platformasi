@@ -16,10 +16,16 @@ import DownloadLogin from "./pages/student/downloadLogin/DownloadLogin";
 import Serfetikat from "./pages/student/serfetikat/Serfetikat";
 import NotFound from "./pages/notFound/NotFound";
 
+import Dars from "./pages/Adminstrator/Dars/Dars";
+import Kutubxona from "./pages/Adminstrator/Kutubxona/Kutubxona";
+import Talabalar from "./pages/Adminstrator/Talabalar/talabalar";
+import Hujjatlar from "./pages/Adminstrator/Normativ/Hujjatlar";
+import Fanyaratish from "./pages/Adminstrator/Fan-yaratish/Fanyaratish";
+import Guruxyaratish from "./pages/Adminstrator/Guruxyaratish/Guruxyaratish";
 
 import './App.css'
 import './hikmatulloh.css'
-import Admin from "./pages/admin/Admin";
+import Admin from "./pages/Adminstrator/Admin/Admin";
 
 
 
@@ -33,7 +39,7 @@ function App() {
      </Route>
       <Route path="dars-jadvali" element={<LessonTable/>} />
       <Route path="fanlar" element={<SciencesList/>} />
-      <Route path="vazifalar" element={<Tasks/>} />
+        <Route path="fanlar/vazifalar" element={<Tasks/>} />
       <Route path="account" element={<Account/>} />
       <Route path="kutubxona" element={<Library/>} />
         <Route path="kutubxona/badiy-adabiyotlar" element={<Books/>} />
@@ -49,7 +55,15 @@ function App() {
 
       {/* ===Teacher=== */}
       {/*-----Admin----- */}
-      <Route path="Admin" element={<Admin/>}/>
+      <Route path="Admin" element={<Admin/>}>
+
+          <Route path="admin/lesson" element={<Dars/>}/>
+          <Route path="admin/kutubxona-admin" element={<Kutubxona/>}/>
+          <Route path="admin/Talabalar" element={<Talabalar/>}/>
+          <Route path="admin/Normativ-hujjatlar" element={<Hujjatlar/>}/>
+          <Route path="admin/Fan-yaratish" element={<Fanyaratish/>}/>
+          <Route path="admin/Guruh-yaratish" element={<Guruxyaratish/>}/>
+      </Route>
       
       <Route path="*" element={<NotFound/>}/>
   </Routes>
