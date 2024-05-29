@@ -11,10 +11,11 @@ import Tasks from "./pages/student/tasks/Tasks";
 import Account from "./pages/student/account/Account";
 import Library from "./pages/student/library/Library";
 import Books from "./pages/student/books/Books";
-// import LoginMain from "./pages/LoginMain";
 import DownloadLogin from "./pages/student/downloadLogin/DownloadLogin";
 import Serfetikat from "./pages/student/serfetikat/Serfetikat";
+import Login from "./pages/student/login/Login";
 import NotFound from "./pages/notFound/NotFound";
+
 
 import Dars from "./pages/admin/Dars";
 import Kutubxona from "./pages/admin/Kutubxona";
@@ -46,8 +47,8 @@ function App() {
         <Route path="kutubxona/oquv-qollanmalar" element={<Books/>} />
 
         {/* ===Login va Sefetikat=== */}
-      {/* <Route path="login" element={<LoginMain/>}/>  */}
-      <Route path="login-serfetikat" element={<DownloadLogin/>}/> 
+      <Route path="login" element={<Login/>}/> 
+      <Route path="download-login" element={<DownloadLogin/>}/> 
       <Route path="serfetikat" element={<Serfetikat/>}/> 
       {/* ===Login va Sefetikat=== */}
 
