@@ -26,6 +26,9 @@ console.log(location);
             <NavLink to={'/Admin'}>
             <button className="bg-[#0085FF] w-[100px] h-[30px]">Admin</button>
             </NavLink>
+            <NavLink to={'/login'}>
+            <button className="bg-[#0085FF] w-[100px] h-[30px]">Login</button>
+            </NavLink>
             
             </div>
 
