@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Link } from 'react-router-dom';
 
-function DownloadLoginForm(props) {
+function DownloadLoginForm() {
     
   const [hidden, setHidden ] = useState(true)
   const changeHidden = () => {

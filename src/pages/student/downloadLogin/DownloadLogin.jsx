@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import DownloadIcon from "../../../assets/icon/DownloadIcon";
+
 import DownloadLoginForm from "../../../components/DownloadLoginForm";
 
 const DownloadLogin = () => {
