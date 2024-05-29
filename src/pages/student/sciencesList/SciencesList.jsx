@@ -34,7 +34,9 @@ function SciencesList() {
         <tbody>
           {subject_data.map((item) => (
             <tr key={item.id} className="border border-gray-200">
-              <td className="px-[18px] py-[15px] text-[#8D8484] font-normal text-[24px] border border-[#ADA8A8] table900:text-[20px]">{item.subject}</td>
+              <td className="px-[18px] py-[15px] text-[#8D8484] font-normal text-[24px] border border-[#ADA8A8] table900:text-[20px]">
+                <Link to="vazifalar">{item.subject}</Link>
+              </td>
               <td className="px-[18px] py-[15px] text-[#8D8484] font-normal text-[24px] border border-[#ADA8A8] table900:text-[20px]">{item.teacher}</td>
             </tr>
           ))}

@@ -20,7 +20,7 @@ function Tasks() {
           <div className=" ">
             <Link
               className="px-[5px] py-[7px] font-normal bg-white text-[24px] border border-[#ADA8A8] outline-blue-300 text-[#8D8484] hover:text-white  hover:bg-blue-300 hover:border-blue-400 active:border-blue-600 focus:border-blue-600  table900:text-[20px] "
-              to="/"
+              to="/fanlar"
             >
               Ortga qaytish
             </Link>
