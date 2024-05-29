@@ -22,7 +22,7 @@ const nav_data = [
     {
         id: 5,
         link: "account",
-        title: "shaxsiy ma’lumot"
+        title: "Shaxsiy ma’lumot"
     },
     {
         id: 6,

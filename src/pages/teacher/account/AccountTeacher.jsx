@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import account_data from "../../../data/account_data";
 import sashaka from "../../../assets/img/sashaka.png";
 
-function Account() {
+function AccountTeacher() {
   return (
     <section className="map">
       <div className="container max-w-[1440px] mx-auto  px-[20px] pt-[70px]">
@@ -15,7 +15,7 @@ function Account() {
           <div className=" ">
             <Link
               className="px-[5px] text-[#8D8484] py-[7px] font-normal bg-white text-[24px] border border-[#ADA8A8] outline-blue-300 hover:bg-blue-300 hover:border-blue-400 hover:text-white active:border-blue-600 focus:border-blue-600  table900:text-[20px] "
-              to="/"
+              to="/HomeTeacher"
             >
               Bosh saxifaga qaytish
             </Link>
@@ -65,4 +65,4 @@ function Account() {
   );
 }
 
-export default Account;
+export default AccountTeacher;

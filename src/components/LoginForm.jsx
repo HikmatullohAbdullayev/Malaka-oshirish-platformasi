@@ -4,20 +4,27 @@ import VisibilityIcon from '../assets/icon/VisibilityIcon';
 import VisibilityOffIcon from '../assets/icon/VisibilityOffIcon';
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function LoginForm(props) {
 
-  const [hidden, setHidden ] = useState(true)
+  const [hidden, setHidden ] = useState(false)
   const changeHidden = () => {
     setHidden(!hidden)
   }
 
     const { register, handleSubmit,reset,  formState: { errors } } = useForm();
-
+  const navigate = useNavigate() 
 
     const onSubmit = data => {
         console.log(data);
+        if (data.firstName === "student"){
+          navigate("/")
+        }else if (data.firstName === "teacher"){
+          navigate("/HomeTeacher")
+        } else if (data.firstName === "admin"){
+          navigate("/Admin")
+        }
         reset()
       };
 
