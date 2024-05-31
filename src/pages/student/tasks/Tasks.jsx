@@ -2,6 +2,7 @@ import React from "react";
 import DownloadIcon from "../../../assets/icon/DownloadIcon";
 import task_data from "../../../data/task_data";
 import { Link } from "react-router-dom/dist";
+import {Table,TableBody,TableCell,TableHead,TableHeader,TableRow,} from "@/components/ui/table";
 
 function Tasks() {
   return (
@@ -28,43 +29,47 @@ function Tasks() {
         </div>
 
         <div className="p-[17px] bg-white ">
-          <table className="min-w-full  border  border-gray-200">
-            <thead>
-              <tr className=" ">
-                <th className="px-[18px]  text-[#8D8484] text-start w-[250px] py-[15px] font-normal text-[24px]   table900:text-[22px] mobile530:w-[40%]">
-                  O`quvchi
-                </th>
-                <th className="px-[18px] text-[#8D8484] max-w-[250px] py-[15px] font-normal text-[24px]   table900:text-[22px] text-start mobile530:w-[30px] ">
-                  Vazifa
-                </th>
-                <th className="px-[18px] py-[15px] font-normal text-[24px]   table900:text-[22px] text-start "></th>
-              </tr>
-            </thead>
-            <tbody className="">
+          <Table className="min-w-full  border  border-gray-200">
+            <TableHeader>
+              <TableRow>
+                <TableHead className="px-[18px]  text-[#8D8484] text-start w-[350px] py-[15px] font-normal text-[24px]   table900:text-[22px] mobile530:w-[40%]">
+                  Fanlar
+                </TableHead >
+                <TableHead className="px-[18px]  text-[#8D8484] text-start w-[80px] py-[15px] font-normal text-[24px]   table900:text-[22px] mobile530:w-[40%]">Vazifa</TableHead>
+                <TableHead className="px-[18px]  text-[#8D8484] text-start w-[210px] py-[15px] font-normal text-[20px]   table900:text-[22px] mobile530:w-[40%]">Topshirish muddati</TableHead>
+                <TableHead className="px-[18px]  text-[#8D8484] text-start w-[170px] py-[15px] font-normal text-[24px]   table900:text-[22px] mobile530:w-[40%]">Fayl</TableHead>
+                <TableHead className="px-[18px]  text-[#8D8484] text-start w-[450px] py-[15px] font-normal text-[24px]   table900:text-[22px] mobile530:w-[40%]">Izoh</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
               {task_data.map((item) => (
-                <tr key={item.id} className="border  border-gray-200">
-                  <td className="px-[18px] py-[15px] text-[#8D8484] font-normal text-[24px]   table900:text-[20px]">
-                    {item.name}
-                  </td>
-                  <td className="px-[18px]  flex justify-evenly  bg-[#C9EDFF]  items-center  my-[15px] rounded-lg py-[5px] font-normal text-[#8D8484] text-[24px]   table900:text-[20px]">
+                <TableRow key={item.id} className="border  border-gray-200">
+                  <TableCell className="px-[18px] py-[15px] text-[#8D8484] font-normal text-[24px]   text-wrap table900:text-[20px]">
+                    {item.subject}
+                  </TableCell>
+                  <TableCell className="px-[18px]  flex   bg-[#C9EDFF]  items-center max-w-[200px]  my-[15px] rounded-lg py-[5px] font-normal text-[#8D8484] text-[24px]   table900:text-[20px]">
                     {" "}
                     <span className="mobile530:w-[20px]">
                       <DownloadIcon />
                     </span>{" "}
-                    <p className="mobil640:hidden">{item.task}</p>
-                  </td>
-
-                  <td className="text-center  ">
-                    <img
-                      className="inline-block py-[7px] px-[25px] border border-[#059BE5] rounded-[5px] mobile530:w-[40px]  mobile550:px-[10px]"
-                      src={item.check}
-                      alt=""
-                    />
-                  </td>
-                </tr>
+                    <p className="desktop:hidden">{item.task}</p>
+                  </TableCell>
+                  <TableCell className="px-[24px] py-[15px] text-[#8D8484] font-normal text-[24px]   table900:text-[20px]">
+                    {item.date} 
+                  </TableCell>
+                  <TableCell className={`   ${item.status === "todo" ? " "  : item.status === "done" ?  "bg-[#C9EDFF] " : "bg-red-500 text-white"}   flex items-center border  max-w-[200px]  my-[15px] rounded-lg py-[5px] font-normal  text-[16px]   table900:text-[14px]`}>
+                  <span className={`  ${item.status === "late" ? "hidden " : ""}`}>
+                      <DownloadIcon />
+                    </span>{" "} 
+                    <p className="desktop:hidden">{item.file}</p>
+                  </TableCell>
+                  <TableCell className="px-[16px] py-[15px] text-[#8D8484] font-normal text-[24px]   table900:text-[14px]">
+                    <p className=" px-[8px] py-[5px] border">{item.comment}</p>
+                  </TableCell>
+                </TableRow>
               ))}
-            </tbody>
-          </table>
+            </TableBody>
+          </Table>
         </div>
       </div>
     </section>
