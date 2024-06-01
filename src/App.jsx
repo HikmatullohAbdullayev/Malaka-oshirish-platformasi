@@ -31,6 +31,8 @@ import './App.css'
 import './hikmatulloh.css'
 import Admin from "./pages/Adminstrator/Admin/Admin";
 import AccountTeacher from "./pages/teacher/account/AccountTeacher";
+import TestList from "./pages/student/testList/TestList";
+import TestQuiz from "./pages/student/testQuiz/TestQuiz";
 
 
 
@@ -52,6 +54,8 @@ function App() {
         <Route path="kutubxona/xorijiy-adabiyotlar" element={<Books/>} />
         <Route path="kutubxona/darsliklar" element={<Books/>} />
         <Route path="kutubxona/oquv-qollanmalar" element={<Books/>} />
+      <Route path="testlar" element={<TestList/>} />
+        <Route path="testlar/yakuniy-test" element={<TestQuiz/>} />
 
         {/* ===Login va Sefetikat=== */}
       <Route path="login" element={<Login/>}/> 
