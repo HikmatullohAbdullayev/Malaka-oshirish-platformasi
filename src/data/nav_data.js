@@ -16,7 +16,7 @@ const nav_data = [
     },
     {
         id: 4,
-        link: "yakuniy-test",
+        link: "testlar",
         title: "Yakuniy Test"
     },
     {
