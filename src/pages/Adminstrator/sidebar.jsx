@@ -44,6 +44,7 @@ const Sidebar = () => {
               + Guruh yaratish
             </li>
           </Link>
+          </ul>
       <ul>
         <Link to='admin/lesson'>
           <li className='p-1 hover:bg-gray-700 text-white'>
@@ -91,6 +92,7 @@ const Sidebar = () => {
         tabIndex={0}
       />
     </div>
+
   );
 };
 
