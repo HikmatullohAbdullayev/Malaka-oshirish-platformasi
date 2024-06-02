@@ -98,9 +98,10 @@ function TestQuiz(props) {
               Test yakunlash
             </Link>
           </div>
+          
         </div>
-      </div>
       <TestFinish />
+      </div>
     </section>
   );
 }
