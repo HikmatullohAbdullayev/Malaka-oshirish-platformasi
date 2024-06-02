@@ -11,26 +11,17 @@ const sidebar = () => {
         className={`${open ? 'w-[230px]' : 'w-[10px] '} h-[1050px] relative   flex-row items-center gap-x-4 bg-[black] ps-6 pt-8 duration-300 `}
       >
       <div>
-<<<<<<< HEAD:src/pages/Adminstrator/sidebar.jsx
-      <ul className={`${open ? 'block' : 'hidden'} flex flex-col gap-1`}>
+      <ul>
         <Link to='admin/lesson'>
           <li className='p-1 hover:bg-gray-700 text-white'>
-          +Dars jadvali yaratish
+            Dars
           </li>
         </Link>
         <Link to='admin/kutubxona-admin'>
           <li className='p-1 hover:bg-gray-700 text-white'>
-          Kutubxona
-=======
-      <ul>
-          <li className='p-4 hover:bg-gray-700 text-white'>
-            <Link to='admin/lesson'>Lesson</Link>
+            Kutubxona
           </li>
-          <li className='p-4 hover:bg-gray-700 text-white'>
-            <Link to='admin/kutubxona-admin'>Library</Link>
->>>>>>> main:src/pages/admin/sidebar.jsx
-          </li>
-        </Link>
+          </Link>
         <Link to='admin/Talabalar'>
           <li className='p-1 hover:bg-gray-700 text-white'>
           Talabalar
