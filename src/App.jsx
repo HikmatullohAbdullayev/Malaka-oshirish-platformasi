@@ -33,6 +33,10 @@ import Admin from "./pages/Adminstrator/Admin/Admin";
 import AccountTeacher from "./pages/teacher/account/AccountTeacher";
 import TestList from "./pages/student/testList/TestList";
 import TestQuiz from "./pages/student/testQuiz/TestQuiz";
+import LessonTableTeacher from "./pages/teacher/lessonTable/LessonTableTeacher";
+import LibraryTeacher from "./pages/teacher/libraryTeacher/LibraryTeacher";
+import TasksTeacher from "./pages/teacher/tasks/TasksTeacher";
+import TestListTeacher from "./pages/teacher/yakuniyTest/TestListTeacher";
 
 
 
@@ -68,6 +72,10 @@ function App() {
       <Route path="/HomeTeacher" element={<HomeTeacher />} />
      </Route>
       <Route path="/teacher-account" element={<AccountTeacher />} />
+      <Route path="/teacher-dars-jadvali" element={<LessonTableTeacher />} />
+      <Route path="/teacher-kutubxona" element={<LibraryTeacher />} />
+      <Route path="/teacher-fan-topshiriqlari" element={<TasksTeacher />} />
+      <Route path="/teacher-yakuniy-test" element={<TestListTeacher />} />
 
 
       {/*-----Admin----- */}
