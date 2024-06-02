@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import lesson from "../../../data/lesson_data";
   
 
-function LessonTable() {
+function LessonTableTeacher() {
 
     
 
@@ -24,7 +24,7 @@ function LessonTable() {
         <p className="px-[25px] text-[#8D8484] py-[2px] font-normal bg-white text-[20px] border border-[#ADA8A8]   table900:text-[16px] ">Haftalik</p>
         <Link
               className="px-[5px] text-[#8D8484] py-[7px] font-normal bg-white text-[24px] border border-[#ADA8A8] outline-blue-300 hover:bg-blue-300 hover:border-blue-400 hover:text-white active:border-blue-600 focus:border-blue-600  table900:text-[20px] "
-              to="/"
+              to="/HomeTeacher"
             >
               Bosh saxifaga qaytish
             </Link>
@@ -61,4 +61,4 @@ function LessonTable() {
     );
 }
 
-export default LessonTable;
+export default LessonTableTeacher;

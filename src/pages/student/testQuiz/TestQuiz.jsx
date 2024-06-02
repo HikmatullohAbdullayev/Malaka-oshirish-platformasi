@@ -6,12 +6,12 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import TestFinish from "../../../components/TestFinish";
 
 function TestQuiz(props) {
-    const [selectedValue, setSelectedValue] = useState('');
+  const [selectedValue, setSelectedValue] = useState("");
 
-    const handleChange = (value) => {
-        setSelectedValue(value);
-        console.log(selectedValue);
-      };
+  const handleChange = (value) => {
+    setSelectedValue(value);
+    console.log(selectedValue);
+  };
 
   return (
     <section className="map">
@@ -39,32 +39,69 @@ function TestQuiz(props) {
               </p>
               <RadioGroup defaultValue="" onValueChange={handleChange}>
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value={item.variant1} id="r1" className="border-gray-500 border-[2px]" />
-                  <Label htmlFor="r1" className="font-normal text-[20px] cursor-pointer">{item.variant1}</Label>
+                  <RadioGroupItem
+                    value={item.variant1}
+                    id="r1"
+                    className="border-gray-500 border-[2px]"
+                  />
+                  <Label
+                    htmlFor="r1"
+                    className="font-normal text-[20px] cursor-pointer"
+                  >
+                    {item.variant1}
+                  </Label>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value={item.variant2} id="r2"  className="border-gray-500 border-[2px]"/>
-                  <Label htmlFor="r2" className="font-normal text-[20px] cursor-pointer">{item.variant2}</Label>
+                  <RadioGroupItem
+                    value={item.variant2}
+                    id="r2"
+                    className="border-gray-500 border-[2px]"
+                  />
+                  <Label
+                    htmlFor="r2"
+                    className="font-normal text-[20px] cursor-pointer"
+                  >
+                    {item.variant2}
+                  </Label>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value={item.variant3} id="r3" className="border-gray-500 border-[2px]" />
-                  <Label htmlFor="r3" className="font-normal text-[20px] cursor-pointer">{item.variant3}</Label>
+                  <RadioGroupItem
+                    value={item.variant3}
+                    id="r3"
+                    className="border-gray-500 border-[2px]"
+                  />
+                  <Label
+                    htmlFor="r3"
+                    className="font-normal text-[20px] cursor-pointer"
+                  >
+                    {item.variant3}
+                  </Label>
                 </div>
-                <div className="flex items-center space-x-2" >
-                  <RadioGroupItem  value={item.variant4} id="r4" className="border-gray-500 border-[2px]" />
-                  <Label htmlFor="r4" className="font-normal text-[20px] cursor-pointer" >{item.variant4}</Label>
+                <div className="flex items-center space-x-2">
+                  <RadioGroupItem
+                    value={item.variant4}
+                    id="r4"
+                    className="border-gray-500 border-[2px]"
+                  />
+                  <Label
+                    htmlFor="r4"
+                    className="font-normal text-[20px] cursor-pointer"
+                  >
+                    {item.variant4}
+                  </Label>
                 </div>
               </RadioGroup>
-            </div> 
+            </div>
           ))}
           <div className=" text-center my-[20px] ">
-            <Link className="bg-blue-500 px-[34px] py-[10px] rounded-sm text-white " >Test yakunlash</Link>
+            <Link className="bg-blue-500 px-[34px] py-[10px] rounded-sm text-white ">
+              Test yakunlash
+            </Link>
           </div>
         </div>
       </div>
-      <TestFinish/>
+      <TestFinish />
     </section>
-
   );
 }
 
