@@ -16,13 +16,13 @@ const nav_data = [
     },
     {
         id: 4,
-        link: "yakuniy-test",
+        link: "testlar",
         title: "Yakuniy Test"
     },
     {
         id: 5,
         link: "account",
-        title: "shaxsiy ma’lumot"
+        title: "Shaxsiy ma’lumot"
     },
     {
         id: 6,

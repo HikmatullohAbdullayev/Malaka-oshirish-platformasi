@@ -16,6 +16,10 @@ import Serfetikat from "./pages/student/serfetikat/Serfetikat";
 import Login from "./pages/student/login/Login";
 import NotFound from "./pages/notFound/NotFound";
 
+// =====teacher=====
+import HomeTeacher from "./pages/teacher/home/HomeTeacher";
+
+
 import Dars from "./pages/Adminstrator/Dars/Dars";
 import Kutubxona from "./pages/Adminstrator/Kutubxona/Kutubxona";
 import Talabalar from "./pages/Adminstrator/Talabalar/talabalar";
@@ -26,6 +30,9 @@ import Guruxyaratish from "./pages/Adminstrator/Guruxyaratish/Guruxyaratish";
 import './App.css'
 import './hikmatulloh.css'
 import Admin from "./pages/Adminstrator/Admin/Admin";
+import AccountTeacher from "./pages/teacher/account/AccountTeacher";
+import TestList from "./pages/student/testList/TestList";
+import TestQuiz from "./pages/student/testQuiz/TestQuiz";
 
 
 
@@ -47,6 +54,8 @@ function App() {
         <Route path="kutubxona/xorijiy-adabiyotlar" element={<Books/>} />
         <Route path="kutubxona/darsliklar" element={<Books/>} />
         <Route path="kutubxona/oquv-qollanmalar" element={<Books/>} />
+      <Route path="testlar" element={<TestList/>} />
+        <Route path="testlar/yakuniy-test" element={<TestQuiz/>} />
 
         {/* ===Login va Sefetikat=== */}
       <Route path="login" element={<Login/>}/> 
@@ -55,6 +64,12 @@ function App() {
       {/* ===Login va Sefetikat=== */}
 
       {/* ===Teacher=== */}
+      <Route path="/" element={<Layout />}>
+      <Route path="/HomeTeacher" element={<HomeTeacher />} />
+     </Route>
+      <Route path="/teacher-account" element={<AccountTeacher />} />
+
+
       {/*-----Admin----- */}
       <Route path="Admin" element={<Admin/>}>
 
