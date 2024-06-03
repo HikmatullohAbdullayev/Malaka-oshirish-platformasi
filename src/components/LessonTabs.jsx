@@ -3,7 +3,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -47,8 +46,7 @@ function LessonTabs(props) {
                   <TableHead className="text-start px-4 py-2 border border-gray-200">Fan</TableHead>
                 </TableRow>
               </TableHeader>
-            
-            
+
                 {lesson_data.map((lesson) => (
                   
                     <TableBody key={lesson.id} className="border border-gray-200">
@@ -57,7 +55,6 @@ function LessonTabs(props) {
                         {lesson.time}
                       </TableCell>
                       
-                      {/* <TableCell className="px-4 py-2 border border-gray-200">{lesson[day]}</TableCell> */}
                       <TableCell  className="px-4 py-2 border border-gray-200 bg-slate-50"><p className={` 
                       ${lesson.Dushanba  ? "text-green-400" : ""}
                       ${ lesson.Seshanba ? "text-green-400" : ""}
@@ -68,9 +65,6 @@ function LessonTabs(props) {
 
                       `}>{lesson[day]}</p></TableCell>
 
-
-
-                      
                     </TableRow>
                   </TableBody>
                 ))}
