@@ -23,14 +23,14 @@ function LessonTable() {
        <p>Dars jadvali</p>
         <p className="px-[25px] text-[#8D8484] py-[2px] font-normal bg-white text-[20px] border border-[#ADA8A8]   table900:text-[16px] ">Haftalik</p>
         <Link
-              className="px-[5px] text-[#8D8484] py-[7px] font-normal bg-white text-[24px] border border-[#ADA8A8] outline-blue-300 hover:bg-blue-300 hover:border-blue-400 hover:text-white active:border-blue-600 focus:border-blue-600  table900:text-[20px] "
+              className="px-[5px] text-[#8D8484] py-[7px] font-normal bg-white text-[24px] border border-[#ADA8A8] outline-blue-300 hover:bg-blue-500 hover:border-blue-500 hover:text-white active:border-blue-600 focus:border-blue-600  table900:text-[20px] "
               to="/"
             >
               Bosh saxifaga qaytish
             </Link>
        </div>
 
-        <Table className="border max-w-full min-w-[800px] overflow-x-scroll  bg-white">
+        <Table className="border max-w-full min-w-[800px] overflow-x-scroll mb-[20px]  bg-white">
           <TableHeader >
             <TableRow className="">
               <TableHead className="w-[20px]"></TableHead>

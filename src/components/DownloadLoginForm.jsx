@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom';
 
 function DownloadLoginForm() {
     
-  const [hidden, setHidden ] = useState(true)
-  const changeHidden = () => {
-    setHidden(!hidden)
+  const [inputs, setinputs ] = useState(true)
+  const changeinputs = () => {
+    setinputs(!inputs)
   }
 
     const { register, handleSubmit,reset,  formState: { errors } } = useForm();
@@ -22,27 +22,33 @@ function DownloadLoginForm() {
       };
 
     return (
+       <>
         <form className='text-start grid gap-[20px] ' onSubmit={handleSubmit(onSubmit)}>
-        <div className=' '>
-          <label className='text-[18px] font-normal text-white' htmlFor="JSHSHIR">JSHSHIR</label>
-          <Input  className=' ' id="JSHSHIR" min={3}  {...register('JSHSHIR', { required: 'JSHSHIR kiritish majburiy' })}  placeholder='J SH SH I R'/>  
-        </div>
-          {errors.firstName && <p className='text-red-500 font-semibold ' >{errors.firstName.message}</p>}
+        {
+          inputs?   <div className='relative'>
+          <label className='text-[18px] font-normal text-white' htmlFor="pasport"  >Pasport seriya</label>
+         
+          <Input id="pasport" min={3} type="text" {...register('pasport', { required: 'Pasport seriya kiritish majburiy' })} placeholder='Pasport seriya'/> 
+      
+          {errors.pasport && <p className='text-red-500 font-semibold '>{errors.pasport.message}</p>} 
+        </div> :
+           <div className=' '>
+           <label className='text-[18px] font-normal text-white' htmlFor="jshshir">JSHSHIR</label>
+           <Input  className=' ' id="jshshir" min={3}  {...register('jshshir', { required: 'JSHSHIR kiritish majburiy' })}  placeholder='J SH SH I R'/>  
+           {errors.jshshir && <p className='text-red-500 font-semibold ' >{errors.jshshir.message}</p>}
+         </div>
+        }
         
-        <div className='relative'>
-          <label className='text-[18px] font-normal text-white' htmlFor="Pasport">Pasport seriya</label>
-          <Input id="Pasport" min={3} type={hidden ? "text" : "password" } {...register('Pasport', { required: 'Pasport seriya kiritish majburiy' })} placeholder='Password'/> 
-          <span  onClick={changeHidden} className='absolute top-[50%] right-2'> {hidden ? <VisibilityIcon/> : <VisibilityOffIcon/> }</span>
-        </div>
-          {errors.lastName && <p className='text-red-500 font-semibold '>{errors.lastName.message}</p>}
-
-    
-
-        <Button variant="form" className="rounded-sm py-0 h-[36px] mt-[20px]"  type="submit">Kirish</Button>
-        <p className='text-[12px] font-normal text-white text-center' >or continue with</p>
-
-        <p className='text-[14px] font-normal text-white text-center'  >Don`t have an account yet? <Link><b>Register for free</b></Link></p>
+        <Button variant="form"  className="rounded-sm py-0 h-[36px] mt-[20px]"  type="submit">Qidirish</Button>
+       
       </form> 
+      {
+        inputs?  <Button variant="outline"  className='mt-[20px] ' onClick={changeinputs} >JSHSHIR bilan qidirish</Button>  :
+        
+        <Button variant="outline"  className='mt-[20px] ' onClick={changeinputs} >Passport seriya bilan qidirish</Button>
+      }
+
+       </>
       
     );
 }

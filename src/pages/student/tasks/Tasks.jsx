@@ -11,7 +11,7 @@ function Tasks() {
         <div className="flex justify-start items-center gap-[20px] py-[40px] mobile530:flex-col mobile530:items-start ">
           <div className=" ">
             <Link
-              className="px-[5px] py-[7px] font-normal bg-white text-[24px] border border-[#ADA8A8] outline-blue-300 text-[#8D8484] hover:text-white  hover:bg-blue-300 hover:border-blue-400 active:border-blue-600 focus:border-blue-600  table900:text-[20px] "
+              className="px-[5px] py-[7px] font-normal bg-white text-[24px] border border-[#ADA8A8] outline-blue-300 text-[#8D8484] hover:text-white  hover:bg-blue-500 hover:border-blue-500 active:border-blue-600 focus:border-blue-600  table900:text-[20px] "
               to="/"
             >
               Bosh saxifaga qaytish
@@ -20,7 +20,7 @@ function Tasks() {
 
           <div className=" ">
             <Link
-              className="px-[5px] py-[7px] font-normal bg-white text-[24px] border border-[#ADA8A8] outline-blue-300 text-[#8D8484] hover:text-white  hover:bg-blue-300 hover:border-blue-400 active:border-blue-600 focus:border-blue-600  table900:text-[20px] "
+              className="px-[5px] py-[7px] font-normal bg-white text-[24px] border border-[#ADA8A8] outline-blue-300 text-[#8D8484] hover:text-white  hover:bg-blue-500 hover:border-blue-500 active:border-blue-600 focus:border-blue-600  table900:text-[20px] "
               to="/fanlar"
             >
               Ortga qaytish

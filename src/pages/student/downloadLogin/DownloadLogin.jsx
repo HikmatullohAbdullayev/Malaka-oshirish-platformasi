@@ -11,7 +11,6 @@ const DownloadLogin = () => {
       
         <div className=" max-w-[450px] w-full mx-auto text-start rounded-[20px]  pt-[50px] ">
           <div className=" grid gap-[10px] px-[20px] py-[20px] formLogin rounded-[20px]  ">
-            <p className="text-[24px] font-normal text-white">Login</p>
             <DownloadLoginForm />
           </div>
         </div>

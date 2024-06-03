@@ -15,7 +15,7 @@ const buttonVariants = cva(
         form:
           "w-full py-[0px]  bg-blue-800 text-white   border-transparrent  hover:bg-blue-400 hover:border-blue-400  hover:outline-blue-600   active:border-blue-600    active:bg-blue-500 active:outline-blue-600  focus:border-blue-600  focus:outline-blue-600 focus:bg-blue-500",
         outline:
-          "border border-input bg-red-600 hover:bg-blue-400 hover:text-accent-foreground",
+          "w-full py-[0px]  bg-green-500 text-white   border-transparrent  hover:bg-green-400 hover:border-green-400  hover:outline-green-600   active:border-green-600    active:bg-green-500 active:outline-green-600  focus:border-green-600  focus:outline-green-600 focus:bg-green-500",
         nimadur:
           "  hover:bg-blue-400 hover:text-accent-foreground",
         secondary:
