@@ -9,6 +9,7 @@ import {
   } from "@/components/ui/table"
 import { Link } from "react-router-dom";
 import lesson from "../../../data/lesson_data";
+import LessonTabs from "../../../components/LessonTabs";
   
 
 function LessonTable() {
@@ -30,7 +31,7 @@ function LessonTable() {
             </Link>
        </div>
 
-        <Table className="border max-w-full min-w-[800px] overflow-x-scroll mb-[20px]  bg-white">
+        <Table className="border max-w-full min-w-[800px] overflow-x-scroll mb-[20px]  bg-white table845:hidden">
           <TableHeader >
             <TableRow className="">
               <TableHead className="w-[20px]"></TableHead>
@@ -46,16 +47,18 @@ function LessonTable() {
         {lesson.map((item) => (
           <TableRow key={item.id}>
             <TableCell className="font-medium border">{item.time}</TableCell>
-            <TableCell className={`border ${item.dushanba ? "bg-blue-300" : "bg-white"}`}>{item.dushanba}</TableCell>
-            <TableCell className={`border ${item.seshanba ? "bg-yellow-300" : "bg-white"}`}>{item.seshanba}</TableCell>
-            <TableCell className={`border ${item.chorshanba ? "bg-green-300" : "bg-white"}`}>{item.chorshanba}</TableCell>
-            <TableCell className={`border ${item.payshanba ? "bg-orange-300" : "bg-white"}`}>{item.payshanba}</TableCell>
-            <TableCell className={`border ${item.dushanba ? "bg-red-300" : "bg-white"}`}>{item.juma}</TableCell>
-            <TableCell className={`border ${item.dushanba ? "bg-purple-300" : "bg-white"}`}>{item.shanba}</TableCell>
+            <TableCell className={`border ${item.Dushanba ? "bg-blue-300" : "bg-white"}`}>{item.Dushanba}</TableCell>
+            <TableCell className={`border ${item.Seshanba ? "bg-yellow-300" : "bg-white"}`}>{item.Seshanba}</TableCell>
+            <TableCell className={`border ${item.Chorshanba ? "bg-green-300" : "bg-white"}`}>{item.Chorshanba}</TableCell>
+            <TableCell className={`border ${item.Payshanba ? "bg-orange-300" : "bg-white"}`}>{item.Payshanba}</TableCell>
+            <TableCell className={`border ${item.Juma ? "bg-red-300" : "bg-white"}`}>{item.Juma}</TableCell>
+            <TableCell className={`border ${item.Shanba ? "bg-purple-300" : "bg-white"}`}>{item.Shanba}</TableCell>
           </TableRow>
         ))}
       </TableBody>
         </Table>
+
+        <LessonTabs/>
         </div>
       </section>
     );
