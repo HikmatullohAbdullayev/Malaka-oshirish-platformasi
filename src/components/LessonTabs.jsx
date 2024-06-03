@@ -24,7 +24,7 @@ function LessonTabs(props) {
   return (
     <div className="max-w-full  flex-col items-center bg-white p-2 hidden table845:flex">
       <Tabs defaultValue="Dushanba" className="w-full bg-white ">
-        <TabsList className="flex justify-center gap-[5px] mb-4  overflow-x-scroll mobile450:justify-start ">
+        <TabsList className="flex justify-center gap-[5px] mb-4 px-[15px] overflow-x-scroll mobile450:justify-start ">
           {daysOfWeek.map((day) => (
             <TabsTrigger
               key={day}
