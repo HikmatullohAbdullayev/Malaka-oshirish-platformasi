@@ -33,19 +33,17 @@ function LoginForm(props) {
         
       <form className='text-start grid gap-[20px] ' onSubmit={handleSubmit(onSubmit)}>
         <div className=' '>
-          <label className='text-[18px] font-normal text-white' htmlFor="firstName">Ism</label>
-          <Input  className=' ' id="firstName" min={3}  {...register('firstName', { required: 'Ism kiritish majburiy' })}  placeholder='F I O'/>  
+          <label className='text-[18px] font-normal text-white' htmlFor="passport">Login</label>
+          <Input  className=' ' id="passport" min={3}  {...register('passport', { required: 'Passport seriya kiritish majburiy' })}  placeholder='Passport seriya'/>  
         </div>
-          {errors.firstName && <p className='text-red-500 font-semibold ' >{errors.firstName.message}</p>}
+          {errors.passport && <p className='text-red-500 font-semibold ' >{errors.passport.message}</p>}
         
         <div className='relative'>
-          <label className='text-[18px] font-normal text-white' htmlFor="lastName">Parol</label>
-          <Input id="lastName" min={3} type={hidden ? "text" : "password" } {...register('lastName', { required: 'Familiya kiritish majburiy' })} placeholder='Password'/> 
+          <label className='text-[18px] font-normal text-white' htmlFor="parol">Parol</label>
+          <Input id="parol" min={3} type={hidden ? "text" : "password" } {...register('parol', { required: 'JSHSHIR kiritish majburiy' })} placeholder='JSHSHIR'/> 
           <span  onClick={changeHidden} className='absolute top-[50%] right-2'> {hidden ? <VisibilityIcon/> : <VisibilityOffIcon/> }</span>
         </div>
-          {errors.lastName && <p className='text-red-500 font-semibold '>{errors.lastName.message}</p>}
-
-    
+          {errors.parol && <p className='text-red-500 font-semibold '>{errors.parol.message}</p>}
 
         <Button variant="form" className="rounded-sm py-0 h-[36px] mt-[20px]"  type="submit">Kirish</Button>
         <p className='text-[12px] font-normal text-white text-center' >or continue with</p>
