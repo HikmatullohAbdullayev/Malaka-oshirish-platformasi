@@ -25,28 +25,33 @@ Quyidagi qadamlarni bajarib, loyihani ishga tushirishingiz mumkin:
 ### Loyiha o'rnatilishi
 
 1. Repository-ni klonlash:
-    ```sh
-    git clone https://github.com/username/malaka-oshirish.git
-    ```
+
+   ```sh
+   git clone https://github.com/username/malaka-oshirish.git
+   ```
 
 2. Loyiha papkasiga kiring:
-    ```sh
-    cd malaka-oshirish
-    ```
+
+   ```sh
+   cd malaka-oshirish
+   ```
 
 3. Talab qilinadigan paketlarni o'rnating:
-    ```sh
-    npm install
-    ```
 
-    yoki
+   ```sh
+   npm install
+   ```
 
-    ```sh
-    yarn install
-    ```
+   yoki
+
+   ```sh
+   yarn install
+   ```
 
 ### Ishga tushirish
 
 Loyihani ishlab chiqish rejimida ishga tushirish:
+
 ```sh
 npm run dev
+```
