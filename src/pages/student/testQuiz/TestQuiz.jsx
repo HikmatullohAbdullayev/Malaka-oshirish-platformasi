@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import quiz_data from "../../../data/quiz_data";
-import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import TestFinish from "../../../components/TestFinish";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import quiz_data from '../../../data/quiz_data';
+import { Label } from '@/components/ui/label';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import TestFinish from '../../../components/TestFinish';
 
 function TestQuiz(props) {
-  const [selectedValue, setSelectedValue] = useState("");
+  const [selectedValue, setSelectedValue] = useState('');
 
   const handleChange = (value) => {
     setSelectedValue(value);
@@ -98,9 +98,8 @@ function TestQuiz(props) {
               Test yakunlash
             </Link>
           </div>
-          
         </div>
-      <TestFinish />
+        <TestFinish />
       </div>
     </section>
   );

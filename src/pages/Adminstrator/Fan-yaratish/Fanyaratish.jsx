@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const Fanyaratish = () => {
-  return (
-    <div>
-      Fanyaratish
-    </div>
-  )
-}
+  return <div>Fanyaratish</div>;
+};
 
-export default Fanyaratish
+export default Fanyaratish;

@@ -1,5 +1,5 @@
-import React from "react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import React from 'react';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   Table,
   TableBody,
@@ -7,19 +7,12 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
+} from '@/components/ui/table';
 
-import lesson_data from "../data/lesson_data.js";
+import lesson_data from '../data/lesson_data.js';
 
 function LessonTabs(props) {
-  const daysOfWeek = [
-    "Du",
-    "Se",
-    "Chor",
-    "Pay",
-    "Ju",
-    "Shan",
-  ];
+  const daysOfWeek = ['Du', 'Se', 'Chor', 'Pay', 'Ju', 'Shan'];
 
   return (
     <div className="max-w-full  flex-col items-center bg-white p-2 hidden table845:flex">
@@ -39,36 +32,43 @@ function LessonTabs(props) {
         {daysOfWeek.map((day) => (
           <TabsContent key={day} value={day} className="w-full">
             <Table className="min-w-full border border-gray-200">
-            
               <TableHeader>
                 <TableRow>
-                  <TableHead className="px-4 py-2 border w-[80px] border-gray-200">Vaqti</TableHead>
-                  <TableHead className="text-start px-4 py-2 border border-gray-200">Fan</TableHead>
+                  <TableHead className="px-4 py-2 border w-[80px] border-gray-200">
+                    Vaqti
+                  </TableHead>
+                  <TableHead className="text-start px-4 py-2 border border-gray-200">
+                    Fan
+                  </TableHead>
                 </TableRow>
               </TableHeader>
 
-                {lesson_data.map((lesson) => (
-                  
-                    <TableBody key={lesson.id} className="border border-gray-200">
-                    <TableRow>
-                      <TableCell className="px-4 py-2 border border-gray-200 font-medium">
-                        {lesson.time}
-                      </TableCell>
-                      
-                      <TableCell  className="px-4 py-2 border border-gray-200 bg-slate-50"><p className={` 
-                      ${lesson.Du  ? "text-green-400" : ""}
-                      ${ lesson.Se ? "text-green-400" : ""}
-                      ${ lesson.Chor ? "text-green-400" : ""}
-                      ${ lesson.Pay ? "text-green-400" : ""}
-                      ${ lesson.Ju ? "text-green-400" : ""}
-                      ${ lesson.Shan ? "text-green-400" : ""}
+              {lesson_data.map((lesson) => (
+                <TableBody key={lesson.id} className="border border-gray-200">
+                  <TableRow>
+                    <TableCell className="px-4 py-2 border border-gray-200 font-medium">
+                      {lesson.time}
+                    </TableCell>
 
-                      `}>{lesson[day]}</p></TableCell>
+                    <TableCell className="px-4 py-2 border border-gray-200 bg-slate-50">
+                      <p
+                        className={` 
+                      ${lesson.Du ? 'text-green-400' : ''}
+                      ${lesson.Se ? 'text-green-400' : ''}
+                      ${lesson.Chor ? 'text-green-400' : ''}
+                      ${lesson.Pay ? 'text-green-400' : ''}
+                      ${lesson.Ju ? 'text-green-400' : ''}
+                      ${lesson.Shan ? 'text-green-400' : ''}
 
-                    </TableRow>
-                  </TableBody>
-                ))}
-                </Table>
+                      `}
+                      >
+                        {lesson[day]}
+                      </p>
+                    </TableCell>
+                  </TableRow>
+                </TableBody>
+              ))}
+            </Table>
           </TabsContent>
         ))}
       </Tabs>
@@ -77,4 +77,3 @@ function LessonTabs(props) {
 }
 
 export default LessonTabs;
-
