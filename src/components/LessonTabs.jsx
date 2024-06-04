@@ -13,18 +13,18 @@ import lesson_data from "../data/lesson_data.js";
 
 function LessonTabs(props) {
   const daysOfWeek = [
-    "Dushanba",
-    "Seshanba",
-    "Chorshanba",
-    "Payshanba",
-    "Juma",
-    "Shanba",
+    "Du",
+    "Se",
+    "Chor",
+    "Pay",
+    "Ju",
+    "Shan",
   ];
 
   return (
     <div className="max-w-full  flex-col items-center bg-white p-2 hidden table845:flex">
-      <Tabs defaultValue="Dushanba" className="w-full bg-white ">
-        <TabsList className="flex justify-center gap-[5px] mb-4  overflow-x-scroll mobile450:justify-start ">
+      <Tabs defaultValue="Du" className="w-full bg-white ">
+        <TabsList className="flex justify-center gap-[5px] mb-4 px-[15px] overflow-x-scroll mobile450:justify-start ">
           {daysOfWeek.map((day) => (
             <TabsTrigger
               key={day}
@@ -56,12 +56,12 @@ function LessonTabs(props) {
                       </TableCell>
                       
                       <TableCell  className="px-4 py-2 border border-gray-200 bg-slate-50"><p className={` 
-                      ${lesson.Dushanba  ? "text-green-400" : ""}
-                      ${ lesson.Seshanba ? "text-green-400" : ""}
-                      ${ lesson.Chorshanba ? "text-green-400" : ""}
-                      ${ lesson.Payshanba ? "text-green-400" : ""}
-                      ${ lesson.juma ? "text-green-400" : ""}
-                      ${ lesson.Shanba ? "text-green-400" : ""}
+                      ${lesson.Du  ? "text-green-400" : ""}
+                      ${ lesson.Se ? "text-green-400" : ""}
+                      ${ lesson.Chor ? "text-green-400" : ""}
+                      ${ lesson.Pay ? "text-green-400" : ""}
+                      ${ lesson.Ju ? "text-green-400" : ""}
+                      ${ lesson.Shan ? "text-green-400" : ""}
 
                       `}>{lesson[day]}</p></TableCell>
 

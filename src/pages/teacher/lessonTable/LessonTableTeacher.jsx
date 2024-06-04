@@ -46,12 +46,12 @@ function LessonTableTeacher() {
         {lesson.map((item) => (
           <TableRow key={item.id}>
             <TableCell className="font-medium border">{item.time}</TableCell>
-            <TableCell className={`border ${item.dushanba ? "bg-blue-300" : "bg-white"}`}>{item.dushanba}</TableCell>
-            <TableCell className={`border ${item.seshanba ? "bg-yellow-300" : "bg-white"}`}>{item.seshanba}</TableCell>
-            <TableCell className={`border ${item.chorshanba ? "bg-green-300" : "bg-white"}`}>{item.chorshanba}</TableCell>
-            <TableCell className={`border ${item.payshanba ? "bg-orange-300" : "bg-white"}`}>{item.payshanba}</TableCell>
-            <TableCell className={`border ${item.dushanba ? "bg-red-300" : "bg-white"}`}>{item.juma}</TableCell>
-            <TableCell className={`border ${item.dushanba ? "bg-purple-300" : "bg-white"}`}>{item.shanba}</TableCell>
+            <TableCell className={`border ${item.Du ? "bg-blue-300" : "bg-white"}`}>{item.Du}</TableCell>
+            <TableCell className={`border ${item.Se ? "bg-yellow-300" : "bg-white"}`}>{item.Se}</TableCell>
+            <TableCell className={`border ${item.Chor ? "bg-green-300" : "bg-white"}`}>{item.Chor}</TableCell>
+            <TableCell className={`border ${item.Pay ? "bg-orange-300" : "bg-white"}`}>{item.Pay}</TableCell>
+            <TableCell className={`border ${item.Du ? "bg-red-300" : "bg-white"}`}>{item.Ju}</TableCell>
+            <TableCell className={`border ${item.Du ? "bg-purple-300" : "bg-white"}`}>{item.Shan}</TableCell>
           </TableRow>
         ))}
       </TableBody>
