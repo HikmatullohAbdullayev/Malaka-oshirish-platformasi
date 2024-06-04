@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   Table,
   TableBody,
@@ -7,14 +7,14 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
+} from '@/components/ui/table';
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
-import testList_data from "../../../data/testList_data";
-import DotsIcon from "../../../assets/icon/DotsIcon";
+} from '@/components/ui/popover';
+import testList_data from '../../../data/testList_data';
+import DotsIcon from '../../../assets/icon/DotsIcon';
 
 function TestList(props) {
   return (
@@ -48,18 +48,22 @@ function TestList(props) {
           <TableBody>
             {testList_data.map((item) => (
               <TableRow key={item.id}>
-                <TableCell className="border"><Link to="/testlar/yakuniy-test">{item.testName}</Link></TableCell>
+                <TableCell className="border">
+                  <Link to="/testlar/yakuniy-test">{item.testName}</Link>
+                </TableCell>
                 <TableCell className="border">{item.startDate}</TableCell>
                 <TableCell className="border">{item.endDate}</TableCell>
                 <TableCell className="border">{item.score}</TableCell>
                 <TableCell className="border ">
-                  {" "}
+                  {' '}
                   <span className="cursor-pointer">
                     <Popover>
                       <PopoverTrigger>
                         <DotsIcon />
                       </PopoverTrigger>
-                      <PopoverContent className="bg-white mr-[70px] relative z-10 cursor-pointer"><Link to="/">Sertifikat yuklab olish</Link></PopoverContent>
+                      <PopoverContent className="bg-white mr-[70px] relative z-10 cursor-pointer">
+                        <Link to="/">Sertifikat yuklab olish</Link>
+                      </PopoverContent>
                     </Popover>
                   </span>
                 </TableCell>

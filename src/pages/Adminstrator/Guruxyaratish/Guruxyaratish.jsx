@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const Guruxyaratish = () => {
-  return (
-    <div>
-      Guruxyaratish
-    </div>
-  )
-}
+  return <div>Guruxyaratish</div>;
+};
 
-export default Guruxyaratish
+export default Guruxyaratish;

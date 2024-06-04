@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import account_data from "../../../data/account_data";
-import sashaka from "../../../assets/img/sashaka.png";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import account_data from '../../../data/account_data';
+import sashaka from '../../../assets/img/sashaka.png';
 
 function Account() {
   return (
@@ -36,7 +36,7 @@ function Account() {
                 Tug`ilgan kun
               </p>
               <p className="px-[18px] py-[15px] text-[#8D8484] font-normal text-[24px] b table900:text-[20px]">
-                Jinsi{" "}
+                Jinsi{' '}
               </p>
               <p className="px-[18px] py-[15px] text-[#8D8484] font-normal text-[24px] b table900:text-[20px]">
                 Manzil

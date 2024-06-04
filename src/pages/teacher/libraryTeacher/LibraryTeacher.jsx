@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import library_data from "../../../data/library_data";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import library_data from '../../../data/library_data';
 
 function LibraryTeacher() {
   return (

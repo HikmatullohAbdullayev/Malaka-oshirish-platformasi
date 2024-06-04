@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const Kutubxona = () => {
-  return (
-    <div>
-      Kutubxona
-    </div>
-  )
-}
+  return <div>Kutubxona</div>;
+};
 
-export default Kutubxona
+export default Kutubxona;
