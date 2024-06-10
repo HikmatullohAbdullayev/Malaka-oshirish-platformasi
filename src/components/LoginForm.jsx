@@ -22,11 +22,11 @@ function LoginForm(props) {
 
   const onSubmit = (data) => {
     console.log(data);
-    if (data.firstName === 'student') {
+    if (data.parol === 'student') {
       navigate('/');
-    } else if (data.firstName === 'teacher') {
+    } else if (data.passport === 'teacher') {
       navigate('/HomeTeacher');
-    } else if (data.firstName === 'admin') {
+    } else if (data.parol === 'admin') {
       navigate('/Admin');
     }
     reset();

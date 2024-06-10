@@ -7,16 +7,16 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
-import subjectTask from '../../../data/subjectTask';
+import teacherTasksList_data from '../../../data/teacherTasksList_data';
 import { Link } from 'react-router-dom';
 
-function TasksTeacher(props) {
+function TeacherTasksList(props) {
   return (
     <div className="map">
       <div className="container max-w-[1440px] mx-auto  px-[20px]  ">
         <div className="flex gap-[105px] my-[50px] items-center table900:gap-[40px]  mobile768:my-[20px]  mobile550:flex-col  mobile550:gap-[20px] mobile550:items-start">
           <h2 className="text-[#8D8484] font-normal  text-[24px] ">
-            Fan topshiriqlari
+            Topshiriqlar royxati
           </h2>
 
           <div className=" ">
@@ -33,37 +33,27 @@ function TasksTeacher(props) {
             <TableHeader className="">
               <TableRow className="text-center ">
                 <TableHead className="text-center  px-[12px] py-[8px]  font-normal text-[21px] border border-[#ADA8A8]  table900:text-[18px] ">
-                  Fanlar
-                </TableHead>
-                <TableHead className="text-center  px-[12px] py-[8px] w-[100px] font-normal text-[21px] border border-[#ADA8A8] table900:text-[18px] ">
-                  Guruh
+                  Fan
                 </TableHead>
                 <TableHead className="text-center  px-[12px] py-[8px] font-normal text-[21px] border border-[#ADA8A8] table900:text-[18px] ">
-                  Mashg'ulotlar
-                </TableHead>
-                <TableHead className="  px-[12px] py-[8px] text-center  font-normal text-[21px] border border-[#ADA8A8]  table900:text-[18px] ">
                   Topshiriqlar
+                </TableHead>
+                <TableHead className="text-center  px-[12px] py-[8px] font-normal text-[21px] border border-[#ADA8A8] table900:text-[18px] ">
+                  Muddat
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              {subjectTask.map((item) => (
+              {teacherTasksList_data.map((item) => (
                 <TableRow key={item.id} className="border border-gray-200">
                   <TableCell className="px-[12px] py-[8px]  font-normal text-[20px] border border-[#ADA8A8] table900:text-[18px] ">
-                    <Link to="/teacher-topshirganlar-royhati">
-                      {item.subject}
-                    </Link>
+                    <Link to="/">{item.subject}</Link>
                   </TableCell>
-                  <TableCell className="px-[12px] py-[8px]  text-nowrap font-normal text-[20px] border border-[#ADA8A8] table900:text-[16px]">
-                    {item.group}
+                  <TableCell className="px-[12px] py-[8px]   font-normal text-[20px] border border-[#ADA8A8] table900:text-[16px]">
+                    {item.task}
                   </TableCell>
                   <TableCell className="px-[12px] py-[8px]  font-normal text-[20px] border border-[#ADA8A8] table900:text-[18px] ">
-                    {item.activity}
-                  </TableCell>
-                  <TableCell className="px-[12px] py-[8px]  font-normal text-[20px] border border-[#ADA8A8] text-center table900:text-[18px] ">
-                    <button className="py-[12px] px-[20px] bg-white inline-block  border-blue-500 border rounded-sm">
-                      {item.assignments}
-                    </button>
+                    {item.dueDate}
                   </TableCell>
                 </TableRow>
               ))}
@@ -75,4 +65,4 @@ function TasksTeacher(props) {
   );
 }
 
-export default TasksTeacher;
+export default TeacherTasksList;

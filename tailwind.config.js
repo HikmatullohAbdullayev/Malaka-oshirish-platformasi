@@ -86,6 +86,9 @@ module.exports = {
         table900: { max: '900px' },
         // => @media (max-width: 900px) { ... }
 
+        table920: { max: '920px' },
+        // => @media (max-width: 920px) { ... }
+
         table1005: { max: '1005px' },
         // => @media (max-width: 1005px) { ... }
 
@@ -103,6 +106,9 @@ module.exports = {
 
         desktop: { max: '1280px' },
         // => @media (max-width: 1280px) { ... }
+
+        desktop1350: { max: '1350px' },
+        // => @media (max-width: 1350px) { ... }
 
         desktop1370: { max: '1370px' },
         // => @media (max-width: 1370px) { ... }
