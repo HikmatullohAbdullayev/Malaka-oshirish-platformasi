@@ -8,12 +8,27 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
+import { Link } from 'react-router-dom';
 
 function SubmitStudent(props) {
   return (
     <section className="map">
       <div className="container max-w-[1440px] mx-auto px-[20px] pt-[50px]">
-        <div className="p-[17px] bg-white ">
+      <div className="flex gap-[185px] items-center table900:gap-[40px] mobile550:flex-col  mobile550:gap-[20px] mobile550:items-start">
+          <h2 className="text-[#8D8484] font-normal  text-[24px] ">
+          Topshirgan talabalar
+          </h2>
+
+          <div className=" ">
+            <Link
+              className="px-[5px] text-[#8D8484] py-[7px] font-normal bg-white text-[24px] border border-[#ADA8A8] outline-blue-300 hover:bg-blue-500 hover:border-blue-400 hover:text-white active:border-blue-600 focus:border-blue-600  table900:text-[20px] "
+              to="/HomeTeacher"
+            >
+              Bosh saxifaga qaytish
+            </Link>
+          </div>
+        </div>
+        <div className="p-[17px] bg-white mt-[40px]">
           <Table className="min-w-full  border  border-gray-200">
             <TableHeader>
               <TableRow>
