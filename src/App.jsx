@@ -35,6 +35,8 @@ import LessonTableTeacher from './pages/teacher/lessonTable/LessonTableTeacher';
 import LibraryTeacher from './pages/teacher/libraryTeacher/LibraryTeacher';
 import TasksTeacher from './pages/teacher/tasks/TasksTeacher';
 import TestListTeacher from './pages/teacher/yakuniyTest/TestListTeacher';
+import TeacherTasksList from './pages/teacher/tasksList/TeacherTasksList';
+import TeacherTestQuiz from './pages/teacher/testQuiz/TeacherTestQuiz';
 
 function App() {
   return (
@@ -71,7 +73,8 @@ function App() {
         <Route path="/teacher-dars-jadvali" element={<LessonTableTeacher />} />
         <Route path="/teacher-kutubxona" element={<LibraryTeacher />} />
         <Route path="/teacher-fan-topshiriqlari" element={<TasksTeacher />} />
-        <Route path="/teacher-yakuniy-test" element={<TestListTeacher />} />
+          <Route path="/teacher-topshirganlar-royhati" element={<TeacherTasksList/>} />
+        <Route path="/teacher-yakuniy-test" element={<TeacherTestQuiz />} />
 
         {/*-----Admin----- */}
         <Route path="Admin" element={<Admin />}>
