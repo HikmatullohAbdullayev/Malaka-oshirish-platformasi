@@ -37,6 +37,7 @@ import TasksTeacher from './pages/teacher/tasks/TasksTeacher';
 import TestListTeacher from './pages/teacher/yakuniyTest/TestListTeacher';
 import TeacherTasksList from './pages/teacher/tasksList/TeacherTasksList';
 import TeacherTestQuiz from './pages/teacher/testQuiz/TeacherTestQuiz';
+import SubmitStudent from './pages/teacher/submitStudent/SubmitStudent';
 
 function App() {
   return (
@@ -75,6 +76,7 @@ function App() {
         <Route path="/teacher-fan-topshiriqlari" element={<TasksTeacher />} />
           <Route path="/teacher-topshirganlar-royhati" element={<TeacherTasksList/>} />
         <Route path="/teacher-yakuniy-test" element={<TeacherTestQuiz />} />
+         <Route path="/submit-students" element={<SubmitStudent />} />
 
         {/*-----Admin----- */}
         <Route path="Admin" element={<Admin />}>
