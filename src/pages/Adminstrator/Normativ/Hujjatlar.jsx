@@ -1,12 +1,7 @@
-import React from 'react'
-
+import React from 'react';
 
 const Hujjatlar = () => {
-  return (
-    <div>
-      Narmotiv-Hujjatlar
-    </div>
-  )
-}
+  return <div>Narmotiv-Hujjatlar</div>;
+};
 
-export default Hujjatlar
+export default Hujjatlar;
