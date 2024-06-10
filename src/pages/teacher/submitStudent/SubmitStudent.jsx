@@ -14,9 +14,9 @@ function SubmitStudent(props) {
   return (
     <section className="map">
       <div className="container max-w-[1440px] mx-auto px-[20px] pt-[50px]">
-      <div className="flex gap-[185px] items-center table900:gap-[40px] mobile550:flex-col  mobile550:gap-[20px] mobile550:items-start">
+        <div className="flex gap-[185px] items-center table900:gap-[40px] mobile550:flex-col  mobile550:gap-[20px] mobile550:items-start">
           <h2 className="text-[#8D8484] font-normal  text-[24px] ">
-          Topshirgan talabalar
+            Topshirgan talabalar
           </h2>
 
           <div className=" ">
