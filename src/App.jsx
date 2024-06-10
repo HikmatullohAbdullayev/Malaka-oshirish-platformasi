@@ -74,9 +74,12 @@ function App() {
         <Route path="/teacher-dars-jadvali" element={<LessonTableTeacher />} />
         <Route path="/teacher-kutubxona" element={<LibraryTeacher />} />
         <Route path="/teacher-fan-topshiriqlari" element={<TasksTeacher />} />
-          <Route path="/teacher-topshirganlar-royhati" element={<TeacherTasksList/>} />
+        <Route
+          path="/teacher-topshirganlar-royhati"
+          element={<TeacherTasksList />}
+        />
         <Route path="/teacher-yakuniy-test" element={<TeacherTestQuiz />} />
-         <Route path="/submit-students" element={<SubmitStudent />} />
+        <Route path="/submit-students" element={<SubmitStudent />} />
 
         {/*-----Admin----- */}
         <Route path="Admin" element={<Admin />}>

@@ -16,7 +16,7 @@ function TasksTeacher(props) {
       <div className="container max-w-[1440px] mx-auto  px-[20px]  ">
         <div className="flex gap-[105px] my-[50px] items-center table900:gap-[40px]  mobile768:my-[20px]  mobile550:flex-col  mobile550:gap-[20px] mobile550:items-start">
           <h2 className="text-[#8D8484] font-normal  text-[24px] ">
-          Fan topshiriqlari
+            Fan topshiriqlari
           </h2>
 
           <div className=" ">
@@ -50,7 +50,9 @@ function TasksTeacher(props) {
               {subjectTask.map((item) => (
                 <TableRow key={item.id} className="border border-gray-200">
                   <TableCell className="px-[12px] py-[8px]  font-normal text-[20px] border border-[#ADA8A8] table900:text-[18px] ">
-                    <Link to="/teacher-topshirganlar-royhati">{item.subject}</Link>
+                    <Link to="/teacher-topshirganlar-royhati">
+                      {item.subject}
+                    </Link>
                   </TableCell>
                   <TableCell className="px-[12px] py-[8px]  text-nowrap font-normal text-[20px] border border-[#ADA8A8] table900:text-[16px]">
                     {item.group}

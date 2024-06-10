@@ -1,19 +1,19 @@
 import React from 'react';
 import submitStudent_data from '../../../data/submitStudent_data';
 import {
-    Table,
-    TableBody,
-    TableCell,
-    TableHead,
-    TableHeader,
-    TableRow,
-  } from '@/components/ui/table';
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table';
 
 function SubmitStudent(props) {
-    return (
-        <section className='map'>
-            <div className="container max-w-[1440px] mx-auto px-[20px] pt-[50px]">
-            <div className="p-[17px] bg-white ">
+  return (
+    <section className="map">
+      <div className="container max-w-[1440px] mx-auto px-[20px] pt-[50px]">
+        <div className="p-[17px] bg-white ">
           <Table className="min-w-full  border  border-gray-200">
             <TableHeader>
               <TableRow>
@@ -24,7 +24,7 @@ function SubmitStudent(props) {
                   Talaba
                 </TableHead>
                 <TableHead className="px-[18px] py-[15px] font-normal text-[24px] border border-[#ADA8A8] text-[#8D8484] table900:text-[22px]">
-                  Topshirgan  vaqti
+                  Topshirgan vaqti
                 </TableHead>
                 <TableHead className="px-[18px] py-[15px] font-normal text-[24px] border border-[#ADA8A8] text-[#8D8484] table900:text-[22px]">
                   Guruh
@@ -52,21 +52,24 @@ function SubmitStudent(props) {
                     {' '}
                     {item.group}
                   </TableCell>
-                  <TableCell className={`px-[18px] py-[15px] text-white font-normal text-[24px] border border-[#ADA8A8] table900:text-[20px]`}>
+                  <TableCell
+                    className={`px-[18px] py-[15px] text-white font-normal text-[24px] border border-[#ADA8A8] table900:text-[20px]`}
+                  >
                     {' '}
-                    <p className={`inline-block p-[5px] w-[80px] rounded-sm text-center  ${item.status=== "done" ? "bg-green-500" : "bg-red-500"} `}>{item.score}</p>
-                    
+                    <p
+                      className={`inline-block p-[5px] w-[80px] rounded-sm text-center  ${item.status === 'done' ? 'bg-green-500' : 'bg-red-500'} `}
+                    >
+                      {item.score}
+                    </p>
                   </TableCell>
                 </TableRow>
               ))}
             </TableBody>
           </Table>
         </div>
-            </div>
-
-
-        </section>
-    );
+      </div>
+    </section>
+  );
 }
 
 export default SubmitStudent;
