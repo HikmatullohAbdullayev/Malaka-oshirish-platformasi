@@ -4,10 +4,10 @@ import infoImg2 from '../assets/img/aboutImg.png';
 
 function InfoSection(props) {
   return (
-    <section className=" h-full  py-[140px]  bg-[#f5f5f5] table1005:py-[30px]  ">
+    <section className=" h-full  py-[140px]   bg-[#f5f5f5] table1005:py-[30px]  ">
       <div className="container max-w-[1440px] mx-auto  px-[20px]  flex items-start justify-around table1005:flex-col-reverse ">
         <div className=" max-w-[400px] table1005:max-w-full  ">
-          <p className="font-semibold text-[30px] text-[#335A50] mobil675:text-[24px]">
+          <p className="font-semibold text-[30px] text-[#335A50] mobil675:text-[24px] table1005:pt-[25px] ">
             TRANSPORT SOHASIDA KADRLARNI QAYTA TAYYORLASH VA ULARNING MALAKASINI
             OSHIRISH HAMDA ILMIY VA INNOVATSION FAOLIYAT TIZIMINI TASHKIL ETISH
             CHORA-TADBIRLARI TO‘G‘RISIDA
