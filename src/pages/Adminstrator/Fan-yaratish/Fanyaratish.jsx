@@ -3,18 +3,14 @@ import './fan__yaratish.css';
 import { AiOutlineCheck } from 'react-icons/ai';
 
 const Fanyaratish = () => {
+  const [seemore, setSeemore] = useState(false);
   window.scrollTo(0, 0);
-  const [see, setSee] = useState(false);
   return (
     <>
       <div className="fanCreate">
         <div className="fanCreate__wrapper  ">
           <form className="fancreate__top ">
-            <button
-              value={see}
-              onClick={(e) => setSee((p) => !p)}
-              className="fan__btn"
-            >
+            <button onClick={(e) => setSeemore(true)} className="fan__btn">
               + Fan yaratish
             </button>
             <select className="fan__select" name="" id="">
@@ -103,7 +99,7 @@ const Fanyaratish = () => {
           </div>
         </div>
       </div>
-      {see ? (
+      {seemore ? (
         <div className="form__module__wrapper">
           <div className="module">
             <div className="module__title">Fan yaratish</div>
