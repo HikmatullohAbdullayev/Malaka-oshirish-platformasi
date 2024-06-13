@@ -28,7 +28,7 @@ td {
  }
  .fanCreate{
     margin: auto;
-    padding: 104px 0px 0px 41px; 
+    padding: 60px 0px 0px 41px; 
  }
  .fancreate__top{
     display: flex;
@@ -65,13 +65,13 @@ td {
 
  }
  .module{
+   padding-bottom: 30px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     top:100px;
     width: 100%;
     max-width: 1000px;
-    height: 470px;
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: #fff;
@@ -103,13 +103,13 @@ td {
  .input__form{
     display: flex;
     flex-direction: column;
-    gap: 71px;
+    gap: 50px;
     padding: 0px 40px;
  }
  .form__input__wrapper{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 30px;
+    gap: 20px;
  }
  .input__wrapper{
     display: flex;
@@ -118,7 +118,7 @@ td {
  }
  .form__input{
     border: 1px solid #ddd;
-    height: 50px;
+    height: 45px;
     padding: 0px 10px;
     outline: none;
     border-radius: 5px;
@@ -141,5 +141,5 @@ td {
  }
  .img{
     color: #05CC19;
-    font-size: 20px;
+    font-size: 15px;
  }
