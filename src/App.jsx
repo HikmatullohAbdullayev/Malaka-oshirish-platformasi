@@ -17,6 +17,15 @@ import NotFound from './pages/notFound/NotFound';
 
 // =====teacher=====
 import HomeTeacher from './pages/teacher/home/HomeTeacher';
+import LessonTableTeacher from './pages/teacher/lessonTable/LessonTableTeacher';
+import LibraryTeacher from './pages/teacher/libraryTeacher/LibraryTeacher';
+import TasksTeacher from './pages/teacher/tasks/TasksTeacher';
+import TeacherBooks from './pages/teacher/books//TeacherBooks';
+import TestListTeacher from './pages/teacher/yakuniyTest/TestListTeacher';
+import TeacherTasksList from './pages/teacher/tasksList/TeacherTasksList';
+import TeacherTestQuiz from './pages/teacher/testQuiz/TeacherTestQuiz';
+import SubmitStudent from './pages/teacher/submitStudent/SubmitStudent';
+
 
 import Dars from './pages/Adminstrator/Dars/Dars';
 import Kutubxona from './pages/Adminstrator/Kutubxona/Kutubxona';
@@ -31,13 +40,7 @@ import Admin from './pages/Adminstrator/Admin/Admin';
 import AccountTeacher from './pages/teacher/account/AccountTeacher';
 import TestList from './pages/student/testList/TestList';
 import TestQuiz from './pages/student/testQuiz/TestQuiz';
-import LessonTableTeacher from './pages/teacher/lessonTable/LessonTableTeacher';
-import LibraryTeacher from './pages/teacher/libraryTeacher/LibraryTeacher';
-import TasksTeacher from './pages/teacher/tasks/TasksTeacher';
-import TestListTeacher from './pages/teacher/yakuniyTest/TestListTeacher';
-import TeacherTasksList from './pages/teacher/tasksList/TeacherTasksList';
-import TeacherTestQuiz from './pages/teacher/testQuiz/TeacherTestQuiz';
-import SubmitStudent from './pages/teacher/submitStudent/SubmitStudent';
+
 
 function App() {
   return (
@@ -73,6 +76,10 @@ function App() {
         <Route path="/teacher-account" element={<AccountTeacher />} />
         <Route path="/teacher-dars-jadvali" element={<LessonTableTeacher />} />
         <Route path="/teacher-kutubxona" element={<LibraryTeacher />} />
+          <Route path="/teacher-kutubxona/badiy-adabiyotlar" element={<TeacherBooks />} />
+          <Route path="/teacher-kutubxona/xorijiy-adabiyotlar" element={<TeacherBooks />} />
+          <Route path="/teacher-kutubxona/darsliklar" element={<TeacherBooks />} />
+          <Route path="/teacher-kutubxona/oquv-qollanmalar" element={<TeacherBooks />} />
         <Route path="/teacher-fan-topshiriqlari" element={<TasksTeacher />} />
         <Route
           path="/teacher-topshirganlar-royhati"

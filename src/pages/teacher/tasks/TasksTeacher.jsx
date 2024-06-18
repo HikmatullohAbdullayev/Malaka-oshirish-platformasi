@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Table,
   TableBody,
@@ -9,8 +9,17 @@ import {
 } from '@/components/ui/table';
 import subjectTask from '../../../data/subjectTask';
 import { Link } from 'react-router-dom';
+import Modal from '../../../components/Modal';
 
 function TasksTeacher(props) {
+
+  const [modal, setModal] = useState(false);
+
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+  
   return (
     <div className="map">
       <div className="container max-w-[1440px] mx-auto  px-[20px]  ">
@@ -61,9 +70,10 @@ function TasksTeacher(props) {
                     {item.activity}
                   </TableCell>
                   <TableCell className="px-[12px] py-[8px]  font-normal text-[20px] border border-[#ADA8A8] text-center table900:text-[18px] ">
-                    <button className="py-[12px] px-[20px] bg-white inline-block  border-blue-500 border rounded-sm">
-                      {item.assignments}
+                    <button onClick={toggleModal} className="py-[12px] px-[20px] bg-white inline-block  border-blue-500 border rounded-sm">
+                      2{item.assignments}
                     </button>
+                    
                   </TableCell>
                 </TableRow>
               ))}
@@ -71,6 +81,10 @@ function TasksTeacher(props) {
           </Table>
         </div>
       </div>
+
+      {modal && (
+      <Modal toggleModal={toggleModal}/>
+      )}
     </div>
   );
 }

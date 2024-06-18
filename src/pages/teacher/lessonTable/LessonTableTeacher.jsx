@@ -9,6 +9,7 @@ import {
 } from '@/components/ui/table';
 import { Link } from 'react-router-dom';
 import lesson from '../../../data/lesson_data';
+import TeacherLessonTab from '../../../components/TeacherLessonTab';
 
 function LessonTableTeacher() {
   return (
@@ -27,7 +28,7 @@ function LessonTableTeacher() {
           </Link>
         </div>
 
-        <Table className="border max-w-full min-w-[800px] overflow-x-scroll  bg-white">
+        <Table className="border max-w-full min-w-[800px] overflow-x-scroll  bg-white table845:hidden">
           <TableHeader>
             <TableRow className="">
               <TableHead className="w-[20px]"></TableHead>
@@ -92,6 +93,7 @@ function LessonTableTeacher() {
           </TableBody>
         </Table>
       </div>
+      <TeacherLessonTab/>
     </section>
   );
 }
