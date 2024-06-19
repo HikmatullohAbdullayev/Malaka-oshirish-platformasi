@@ -6,7 +6,7 @@ function DotsIcon() {
       width={25}
       height={25}
       viewBox="0 0 30 30"
-      fill="none"
+      fill="ture"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
