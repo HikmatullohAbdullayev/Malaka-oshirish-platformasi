@@ -71,7 +71,7 @@ function TasksTeacher(props) {
                   </TableCell>
                   <TableCell className="px-[12px] py-[8px]  font-normal text-[20px] border border-[#ADA8A8] text-center table900:text-[18px] ">
                     <button onClick={toggleModal} className="py-[12px] px-[20px] bg-white inline-block  border-blue-500 border rounded-sm">
-                      2{item.assignments}
+                      {item.assignments}
                     </button>
                     
                   </TableCell>
