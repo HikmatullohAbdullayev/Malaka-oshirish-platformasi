@@ -9,6 +9,7 @@ import {
 } from '@/components/ui/table';
 import teacherTasksList_data from '../../../data/teacherTasksList_data';
 import { Link } from 'react-router-dom';
+import TasksListTabs from '../../../components/TasksListTabs';
 
 function TeacherTasksList(props) {
   return (
@@ -29,7 +30,7 @@ function TeacherTasksList(props) {
           </div>
         </div>
         <div className="px-[20px] py-[15px] bg-white">
-          <Table className="max-w-full  border text-center  bg-white  border-gray-200">
+          <Table className="max-w-full  border text-center  bg-white  border-gray-200 mobile530:hidden">
             <TableHeader className="">
               <TableRow className="text-center ">
                 <TableHead className="text-center  px-[12px] py-[8px]  font-normal text-[21px] border border-[#ADA8A8]  table900:text-[18px] ">
@@ -59,6 +60,8 @@ function TeacherTasksList(props) {
               ))}
             </TableBody>
           </Table>
+          {/* tab  */}
+          <TasksListTabs />
         </div>
       </div>
     </div>

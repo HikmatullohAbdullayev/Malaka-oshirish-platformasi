@@ -9,6 +9,7 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import { Link } from 'react-router-dom';
+import SubmitStudentTabs from '../../../components/SubmitStudentTabs';
 
 function SubmitStudent(props) {
   return (
@@ -29,7 +30,7 @@ function SubmitStudent(props) {
           </div>
         </div>
         <div className="p-[17px] bg-white mt-[40px]">
-          <Table className="min-w-full  border  border-gray-200">
+          <Table className="min-w-full  border  border-gray-200 table950:hidden">
             <TableHeader>
               <TableRow>
                 <TableHead className="px-[18px] py-[15px] w-[30px] font-normal text-[24px] border border-[#ADA8A8] text-[#8D8484] table900:text-[22px]">
@@ -81,6 +82,7 @@ function SubmitStudent(props) {
               ))}
             </TableBody>
           </Table>
+          <SubmitStudentTabs />
         </div>
       </div>
     </section>

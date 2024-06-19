@@ -26,7 +26,6 @@ import TeacherTasksList from './pages/teacher/tasksList/TeacherTasksList';
 import TeacherTestQuiz from './pages/teacher/testQuiz/TeacherTestQuiz';
 import SubmitStudent from './pages/teacher/submitStudent/SubmitStudent';
 
-
 import Dars from './pages/Adminstrator/Dars/Dars';
 import Kutubxona from './pages/Adminstrator/Kutubxona/Kutubxona';
 import Talabalar from './pages/Adminstrator/Talabalar/talabalar';
@@ -40,7 +39,6 @@ import Admin from './pages/Adminstrator/Admin/Admin';
 import AccountTeacher from './pages/teacher/account/AccountTeacher';
 import TestList from './pages/student/testList/TestList';
 import TestQuiz from './pages/student/testQuiz/TestQuiz';
-
 
 function App() {
   return (
@@ -76,10 +74,22 @@ function App() {
         <Route path="/teacher-account" element={<AccountTeacher />} />
         <Route path="/teacher-dars-jadvali" element={<LessonTableTeacher />} />
         <Route path="/teacher-kutubxona" element={<LibraryTeacher />} />
-          <Route path="/teacher-kutubxona/badiy-adabiyotlar" element={<TeacherBooks />} />
-          <Route path="/teacher-kutubxona/xorijiy-adabiyotlar" element={<TeacherBooks />} />
-          <Route path="/teacher-kutubxona/darsliklar" element={<TeacherBooks />} />
-          <Route path="/teacher-kutubxona/oquv-qollanmalar" element={<TeacherBooks />} />
+        <Route
+          path="/teacher-kutubxona/badiy-adabiyotlar"
+          element={<TeacherBooks />}
+        />
+        <Route
+          path="/teacher-kutubxona/xorijiy-adabiyotlar"
+          element={<TeacherBooks />}
+        />
+        <Route
+          path="/teacher-kutubxona/darsliklar"
+          element={<TeacherBooks />}
+        />
+        <Route
+          path="/teacher-kutubxona/oquv-qollanmalar"
+          element={<TeacherBooks />}
+        />
         <Route path="/teacher-fan-topshiriqlari" element={<TasksTeacher />} />
         <Route
           path="/teacher-topshirganlar-royhati"

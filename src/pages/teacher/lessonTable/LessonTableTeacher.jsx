@@ -93,7 +93,7 @@ function LessonTableTeacher() {
           </TableBody>
         </Table>
       </div>
-      <TeacherLessonTab/>
+      <TeacherLessonTab />
     </section>
   );
 }
