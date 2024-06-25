@@ -3,16 +3,15 @@ import './fan__yaratish.css';
 import { AiOutlineCheck } from 'react-icons/ai';
 
 const Fanyaratish = () => {
+  const [createscience, setCreatescience] = useState(false);
   window.scrollTo(0, 0);
-  const [see, setSee] = useState(false);
   return (
     <>
       <div className="fanCreate">
         <div className="fanCreate__wrapper  ">
-          <form className="fancreate__top ">
+          <div className="fancreate__top ">
             <button
-              value={see}
-              onClick={(e) => setSee((p) => !p)}
+              onClick={(e) => setCreatescience(true)}
               className="fan__btn"
             >
               + Fan yaratish
@@ -20,7 +19,7 @@ const Fanyaratish = () => {
             <select className="fan__select" name="" id="">
               <option value="2023-2024 yil">2023-2024 yil</option>
             </select>
-          </form>
+          </div>
           <div className="fancreate__bottom">
             <table>
               <thead>
@@ -103,8 +102,8 @@ const Fanyaratish = () => {
           </div>
         </div>
       </div>
-      {see ? (
-        <div className="form__module__wrapper">
+      {createscience ? (
+        <div className="form__module__wrapper pt-[120px]">
           <div className="module">
             <div className="module__title">Fan yaratish</div>
             <span className="module__line"></span>
@@ -160,7 +159,11 @@ const Fanyaratish = () => {
                 </div>
               </div>
               <div className="btn__wrapper">
-                <button className="btn__wrapper__btn">
+                <button
+                  value={createscience}
+                  onClick={(e) => setCreatescience((p) => !p)}
+                  className="btn__wrapper__btn"
+                >
                   <div className="img">
                     <AiOutlineCheck />
                   </div>

@@ -1,0 +1,10 @@
+.teacher__module__title p{
+    border-radius: 8px 8px 0px 0px;
+}
+.input__wrapper__teacher input{
+    outline: none;
+ border: 1px solid #D9D9D9;
+}
+.input__wrapper__teacher input:focus{
+    border: 1px solid rgb(101, 153, 231);
+}

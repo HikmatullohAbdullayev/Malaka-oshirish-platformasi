@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Route, Routes } from 'react-router-dom';
 import Layout from './layout/Layout';
+
 // students
 import Home from './pages/student/home/Home';
 import LessonTable from './pages/student/lessonTable/LessonTable';
@@ -26,6 +27,7 @@ import TeacherTasksList from './pages/teacher/tasksList/TeacherTasksList';
 import TeacherTestQuiz from './pages/teacher/testQuiz/TeacherTestQuiz';
 import SubmitStudent from './pages/teacher/submitStudent/SubmitStudent';
 
+
 import Dars from './pages/Adminstrator/Dars/Dars';
 import Kutubxona from './pages/Adminstrator/Kutubxona/Kutubxona';
 import Talabalar from './pages/Adminstrator/Talabalar/talabalar';
@@ -39,6 +41,10 @@ import Admin from './pages/Adminstrator/Admin/Admin';
 import AccountTeacher from './pages/teacher/account/AccountTeacher';
 import TestList from './pages/student/testList/TestList';
 import TestQuiz from './pages/student/testQuiz/TestQuiz';
+
+
+import Teacher__Add from './pages/Adminstrator/teacher__add/Teacher__Add';
+
 
 function App() {
   return (
@@ -106,6 +112,7 @@ function App() {
           <Route path="admin/Normativ-hujjatlar" element={<Hujjatlar />} />
           <Route path="admin/Fan-yaratish" element={<Fanyaratish />} />
           <Route path="admin/Guruh-yaratish" element={<Guruxyaratish />} />
+          <Route path="admin/teacher__add" element={<Teacher__Add />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
