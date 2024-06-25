@@ -65,6 +65,9 @@ module.exports = {
         mobile550: { max: '550px' },
         // => @media (max-width: 550px) { ... }
 
+        mobile580: { max: '580px' },
+        // => @media (max-width: 580px) { ... }
+
         mobil640: { max: '640px' },
         // => @media (max-width: 640px) { ... }
 
@@ -88,6 +91,9 @@ module.exports = {
 
         table920: { max: '920px' },
         // => @media (max-width: 920px) { ... }
+
+        table950: { max: '950px' },
+        // => @media (max-width: 950px) { ... }
 
         table1005: { max: '1005px' },
         // => @media (max-width: 1005px) { ... }

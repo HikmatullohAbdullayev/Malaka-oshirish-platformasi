@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Table,
   TableBody,
@@ -9,8 +9,16 @@ import {
 } from '@/components/ui/table';
 import subjectTask from '../../../data/subjectTask';
 import { Link } from 'react-router-dom';
+import Modal from '../../../components/Modal';
+import TaskTeacherTabs from '../../../components/TaskTeacherTabs';
 
 function TasksTeacher(props) {
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
   return (
     <div className="map">
       <div className="container max-w-[1440px] mx-auto  px-[20px]  ">
@@ -29,7 +37,7 @@ function TasksTeacher(props) {
           </div>
         </div>
         <div className="px-[20px] py-[15px] bg-white">
-          <Table className="max-w-full  border text-center  bg-white  border-gray-200">
+          <Table className="max-w-full  border text-center  bg-white  border-gray-200  mobil680:hidden">
             <TableHeader className="">
               <TableRow className="text-center ">
                 <TableHead className="text-center  px-[12px] py-[8px]  font-normal text-[21px] border border-[#ADA8A8]  table900:text-[18px] ">
@@ -61,7 +69,10 @@ function TasksTeacher(props) {
                     {item.activity}
                   </TableCell>
                   <TableCell className="px-[12px] py-[8px]  font-normal text-[20px] border border-[#ADA8A8] text-center table900:text-[18px] ">
-                    <button className="py-[12px] px-[20px] bg-white inline-block  border-blue-500 border rounded-sm">
+                    <button
+                      onClick={toggleModal}
+                      className="py-[12px] px-[20px] bg-white inline-block  border-blue-500 border rounded-sm"
+                    >
                       {item.assignments}
                     </button>
                   </TableCell>
@@ -70,7 +81,10 @@ function TasksTeacher(props) {
             </TableBody>
           </Table>
         </div>
+        <TaskTeacherTabs subjectTask={subjectTask} toggleModal={toggleModal} />
       </div>
+
+      {modal && <Modal toggleModal={toggleModal} />}
     </div>
   );
 }

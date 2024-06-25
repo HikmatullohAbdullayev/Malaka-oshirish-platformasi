@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { Link } from 'react-router-dom';
 
 function DownloadLoginForm() {
   const [inputs, setinputs] = useState(true);
@@ -82,7 +83,7 @@ function DownloadLoginForm() {
           className="rounded-sm py-0 h-[36px] mt-[20px]"
           type="submit"
         >
-          Qidirish
+          <Link to="/serfetikat">Qidirish</Link>
         </Button>
       </form>
       {inputs ? (

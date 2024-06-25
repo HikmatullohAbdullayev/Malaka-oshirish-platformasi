@@ -15,6 +15,7 @@ import {
 } from '@/components/ui/popover';
 import teacherTestQuiz_data from '../../../data/teacherTestQuiz_data';
 import DotsIcon from '../../../assets/icon/DotsIcon';
+import TestTeacherTabs from '../../../components/TestTeacherTabs';
 
 function TeacherTestQuiz(props) {
   return (
@@ -35,7 +36,7 @@ function TeacherTestQuiz(props) {
           </div>
         </div>
 
-        <Table className="bg-white mt-[50px]">
+        <Table className="bg-white mt-[50px] mobile580:hidden ">
           <TableHeader>
             <TableRow>
               <TableHead className="border">Test nomi</TableHead>
@@ -48,9 +49,7 @@ function TeacherTestQuiz(props) {
           <TableBody>
             {teacherTestQuiz_data.map((item) => (
               <TableRow key={item.id}>
-                <TableCell className="border">
-                  <Link to="/testlar/yakuniy-test">{item.testName}</Link>
-                </TableCell>
+                <TableCell className="border">{item.testName}</TableCell>
                 <TableCell className="border">{item.group}</TableCell>
                 <TableCell className="border">{item.startDate}</TableCell>
                 <TableCell className="border">{item.endDate}</TableCell>
@@ -71,6 +70,8 @@ function TeacherTestQuiz(props) {
             ))}
           </TableBody>
         </Table>
+
+        <TestTeacherTabs />
       </div>
     </section>
   );
