@@ -6,7 +6,7 @@ const Guruxyaratish = () => {
   const [create, setCreate] = useState(false);
   return (
     <div className="creategroup">
-      <div className="creategroup__wrapper ">
+      <div className="creategroup__wrapper flex flex-col gap-10 ">
         <div className="create__group__title pl-24 pt-10">
           <button
             value={create}
@@ -17,15 +17,15 @@ const Guruxyaratish = () => {
           </button>
         </div>
         {create ? (
-          <div className="module__class__create  fixed flex items-center justify-center w-100 h-100 m-auto pl-[25%] ">
-            <div className="class__module border flex flex-col gap-6  border-slate-200 rounded-xl w-[409px]">
+          <div className="module__class__create my-16   fixed flex items-center justify-center w-100 h-100 m-auto pl-[30%] ">
+            <div className="class__module border bg-[white] flex flex-col gap-6  border-slate-200 rounded-xl w-[409px]">
               <div className="module__title flex items-center pl-5 font-sans  h-[60px] rounded-t-xl bg-[#0E7ED0]">
                 <p className="flex items-center gap-1.5 text-[#fff]">
                   +Guruh yaratish
                 </p>
               </div>
               <span className="w-100 bg-[#0E7ED0] h-1 mx-2"></span>
-              <form className="module__form flex flex-col pl-5 pb-5 gap-2.5">
+              <form className="module__form flex flex-col pl-7 pb-5 gap-2.5">
                 <div className="group__input__wrapper flex flex-col gap-[15px]">
                   <p className="text-base font-normal leading-[19px] text-black font-sans">
                     Guruh nomi
@@ -82,6 +82,49 @@ const Guruxyaratish = () => {
         ) : (
           <></>
         )}
+        <div className="create__table__group  m-auto ml-24  bg-[white]">
+          <table className="">
+            <thead>
+              <tr>
+                <th>Guruh</th>
+                <th>Malaka oshirish uchun soat</th>
+                <th>O’quv yili</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>H-151</td>
+                <td>20.05.2023</td>
+                <td>20.05.2024</td>
+              </tr>
+              <tr>
+                <td>H-150</td>
+                <td>20.05.2023</td>
+                <td>20.05.2024</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

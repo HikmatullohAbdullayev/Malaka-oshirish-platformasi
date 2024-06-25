@@ -59,6 +59,11 @@ const Sidebar = () => {
               + Guruh yaratish
             </li>
           </Link>
+          <Link to="admin/teacher__add">
+            <li className="p-1 hover:bg-gray-700 text-white">
+              + O'qituvchi qo'shish
+            </li>
+          </Link>
         </ul>
       </div>
       <img

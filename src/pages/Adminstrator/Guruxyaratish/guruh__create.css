@@ -1,0 +1,18 @@
+table,
+th,
+td {
+    border: 1px solid #8d8484;
+    border-collapse: collapse;
+}
+ th,
+ td {
+     font-family: Inter;
+     font-weight: 400;
+     font-size: 12px;
+     text-align: center;
+     width: 370px;
+     height: 45px;
+     font-size: 16px;
+     font-weight: 500;
+
+ }

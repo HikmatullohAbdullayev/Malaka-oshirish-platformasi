@@ -38,6 +38,7 @@ import TestListTeacher from './pages/teacher/yakuniyTest/TestListTeacher';
 import TeacherTasksList from './pages/teacher/tasksList/TeacherTasksList';
 import TeacherTestQuiz from './pages/teacher/testQuiz/TeacherTestQuiz';
 import SubmitStudent from './pages/teacher/submitStudent/SubmitStudent';
+import Teacher__Add from './pages/Adminstrator/teacher__add/Teacher__Add';
 
 function App() {
   return (
@@ -89,6 +90,7 @@ function App() {
           <Route path="admin/Normativ-hujjatlar" element={<Hujjatlar />} />
           <Route path="admin/Fan-yaratish" element={<Fanyaratish />} />
           <Route path="admin/Guruh-yaratish" element={<Guruxyaratish />} />
+          <Route path="admin/teacher__add" element={<Teacher__Add />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
