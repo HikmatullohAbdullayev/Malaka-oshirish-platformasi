@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import library_data from "../../../data/library_data";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import library_data from '../../../data/library_data';
 
 function Library() {
   return (
@@ -13,7 +13,7 @@ function Library() {
 
           <div className=" ">
             <Link
-              className="px-[5px] text-[#8D8484] py-[7px] font-normal bg-white text-[24px] border border-[#ADA8A8] outline-blue-300 hover:bg-blue-300 hover:border-blue-400 hover:text-white active:border-blue-600 focus:border-blue-600  table900:text-[20px] "
+              className="px-[5px] text-[#8D8484] py-[7px] font-normal bg-white text-[24px] border border-[#ADA8A8] outline-blue-300 hover:bg-blue-500 hover:border-blue-500 hover:text-white active:border-blue-600 focus:border-blue-600  table900:text-[20px] "
               to="/"
             >
               Bosh saxifaga qaytish
@@ -24,11 +24,11 @@ function Library() {
           <h2 className="text-center  text-[#8D8484] font-normal text-[24px] b table900:text-[32px]">
             Metropoliten elektron kutubxonasi
           </h2>
-          <span className="block bg-blue-400 h-1 max-w-[1000px] mx-auto mt-[20px] mb-[50px]"></span>
+          <span className="block bg-blue-500 h-1 max-w-[1000px] mx-auto mt-[20px] mb-[50px]"></span>
           <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-[40px] ">
             {library_data.map((item) => (
               <div
-                className="mx-auto grid gap-[20px]  border border-blue-400 py-[8px] px-[28px] text-center rounded-md w-[250px] "
+                className="mx-auto grid gap-[20px]  border border-blue-500 py-[8px] px-[28px] text-center rounded-md w-[250px] "
                 key={item.id}
               >
                 <div className="w-[100px] mx-auto ">
